@@ -2,9 +2,8 @@ import wandb
 import time
 import numpy as np
 
-PROJECT="debugging"
-ENTITY="tim-hays"
-MODEL_NAME="test_model"
+PROJECT = "debugging"
+ENTITY = "tim-hays"
 RUN_TIME_SECONDS = 15
 EVAL_STEPS = 1
 ARRAY_SIZE = 2**10
@@ -23,7 +22,7 @@ if __name__ == "__main__":
         }
     )
 
-    print("Starting run from train_1.py")
+    print("Starting run")
     start_time = time.time()
 
     i = 0
