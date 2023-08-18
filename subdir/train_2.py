@@ -10,7 +10,7 @@ EVAL_STEPS = 1
 ARRAY_SIZE = 2**10
 
 if __name__ == "__main__":
-    settings = wandb.Settings()
+    settings = wandb.Settings(job_name="artifact-subdir-job")
     run = wandb.init(
         project=PROJECT,
         entity=ENTITY,
