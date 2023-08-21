@@ -39,6 +39,6 @@ COPY --chown=1000 src/ /home/timh
 
 ENV PYTHONUNBUFFERED=1
 
-RUN echo "hello from Dockerfile at ROOT"
+RUN echo "hello from the DEFAULT Dockerfile at ROOT"
 
 ENTRYPOINT ["python3.11", "train.py"]
