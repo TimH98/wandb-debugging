@@ -32,7 +32,7 @@ WORKDIR /home/timh
 RUN chown -R 1000 /home/timh
 
 # make artifacts cache dir unrelated to build
-RUN mkdir -p /home/timh/.cache && chown -R 1000 /home/timh/.cache
+# RUN mkdir -p /home/timh/.cache && chown -R 1000 /home/timh/.cache
 
 # copy code/etc
 COPY --chown=1000 src/ /home/timh
