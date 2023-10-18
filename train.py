@@ -4,7 +4,8 @@ import numpy as np
 
 PROJECT = "debugging"
 ENTITY = "tim-hays"
-RUN_TIME_SECONDS = 15
+MODEL_NAME = "test_model"
+RUN_TIME_SECONDS = 5
 EVAL_STEPS = 1
 ARRAY_SIZE = 2**10
 
@@ -22,11 +23,11 @@ if __name__ == "__main__":
         }
     )
 
-    print("Starting run")
+    print("Starting run from train_1.py in branch test-branch")
     start_time = time.time()
 
     i = 0
-    time_elapsed = 0
+    time_elapsed = 0.0
     while time_elapsed < RUN_TIME_SECONDS:
         i += 1
         arr1 = np.random.rand(ARRAY_SIZE, ARRAY_SIZE)
