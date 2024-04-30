@@ -9,7 +9,7 @@ EVAL_STEPS = 1
 ARRAY_SIZE = 2**10
 
 if __name__ == "__main__":
-    settings = wandb.Settings(job_name="artifact-job")
+    settings = wandb.Settings(job_name="git-job")
     run = wandb.init(
         project=PROJECT,
         entity=ENTITY,
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         }
     )
 
-    print("Starting run")
+    print("Starting run with even more uncommitted changes")
     start_time = time.time()
 
     i = 0
